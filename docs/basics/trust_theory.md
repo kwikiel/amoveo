@@ -12,15 +12,15 @@ It would be great if we could find some general principles to quickly know the s
 
 From strongest security to weakest, the spectrum of trust:
 
-1) provably secure cryptographic protocols. An attacker willing to spend any amount of money can't meaningfully interupt the mechanism or take anyone's money.
+## 1) provably secure cryptographic protocols. An attacker willing to spend any amount of money can't meaningfully interupt the mechanism or take anyone's money.
 * hash algorithms
 * public private key cryptography
 [learn more about security level 1 here](trust_theory_1.1.md)
-2) mechanisms where any attacker willing to spend A of their own money can destroy B value of someone else's. where A > B.
+## 2) mechanisms where any attacker willing to spend A of their own money can destroy B value of someone else's. where A > B.
 [learn more about security level 2 here](trust_theory_2.2.md)
-3) same as (2) but 0 =< A =< B.
+## 3) same as (2) but 0 =< A =< B.
 * if a blockchain mechanism has this kind of level of trust, it is usually considered a bug that needs to be patched. These are griefing attacks https://consensys.github.io/smart-contract-best-practices/known_attacks/#insufficient-gas-griefing
-4) same as (3), but A < 0.
+## 4) same as (3), but A < 0.
 
 for the trust level of a protocol, we record 2 numbers. The first number is how bad attacks can be where we can know the attack occured, and the second is how bad the attacks can be where the attack is indistinguishible from unlucky randomness.
 
